@@ -3,11 +3,13 @@ var express = require('express');
 var mongoose = require('mongoose');
 var bodyparser = require('body-parser');
 var cors = require('cors');
-var path = require('path');                 //standard lib
+var path = require('path');                 //path is a python standard lib
 
-var app = express();                        //call the express method to get the app handler
+//call the express method to get the app handler
+var app = express();
 
-const route = require('./routes/route');    //all routes are placed here
+//all routes are placed here
+const route = require('./routes/route');
 
 //Connect to mongodb with optional parameters
 let param = {
